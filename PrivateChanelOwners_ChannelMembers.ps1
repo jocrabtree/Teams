@@ -105,7 +105,6 @@ foreach ($pair in $TeamChannelPairs) {
 
         
         # Handle 0 members to promote returned
-        #if (-not $membersToPromote -or $membersToPromote.Count -eq 0) {
         if (-not $selectMembersToPromote -or $selectMembersToPromote.count -eq 0){
             "No eligible members to promote - skipping" | Log-It -Status Failure
 
