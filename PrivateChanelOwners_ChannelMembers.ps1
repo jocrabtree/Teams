@@ -10,7 +10,6 @@ $ExactTime = Get-Date -Format "MM-dd-yyyy_HHmm"
 $LogFile = "C:\temp\TeamsPrivateChannelNoOwner-$($ExactTime).log"
 
 # Import CSV
-# in Josh lab - Private Team 1 + Private Channel 1 & Contoso + Private Channel 1
 $TeamsAndChannelsCsv = Import-Csv -Path $csvPath
 
 #Function used for writing to the log file
