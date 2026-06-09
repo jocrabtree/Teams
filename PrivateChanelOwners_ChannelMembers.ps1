@@ -138,7 +138,6 @@ foreach ($pair in $TeamChannelPairs) {
 
             try {
                 "Promoting $($member.Name) to owner" | Log-It -Status General
-
                 Add-TeamChannelUser -GroupId $pair.TeamID -DisplayName $privateChannel.DisplayName -User $member.User -Role Owner -ErrorAction Stop
                 "Success: $($member.Name) promoted to owner." | Log-It -Status Success
                 $OwnerResult += "$($member.Name):Success"
